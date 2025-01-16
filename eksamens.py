@@ -1,5 +1,5 @@
 class Doktorats:
-    def __init__(self, nosaukums='N/A', pacientuSkaits=0):
+    def __init__(self, nosaukums='N/A', pacientuSkaits=1):
         self.nosaukums = nosaukums
         self.pacientuSkaits = pacientuSkaits
     def ievade(self):
@@ -12,13 +12,16 @@ class Doktorats:
             print("Ievade veiksmīga:", self.pacientuSkaits)
 
     def izvade(self):
-        print(f"Doktorats {self.nosaukums} apkalpo - {self.pacientuSkaits}")
+        addition=""
+        if (self.pacientuSkaits%10 !=1):
+            addition = "s"
+        print(f"Doktorats {self.nosaukums} apkalpo - {self.pacientuSkaits} pacientu{addition}.")
 d1=Doktorats("Ziemels", 325)
 d1.izvade()
 d1.ievade()
 d1.izvade()
 print(d1)
-d2=Doktorats('Bērziņš', 32)
+d2=Doktorats()
 d2.izvade()
 d2.ievade()
 d2.izvade()
