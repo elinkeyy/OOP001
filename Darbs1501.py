@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Dzivnieks:
+class Dzivnieks(ABC):
     def __init__(self, vards, kajas):
         self.vards = vards
         self.kajas = kajas
@@ -27,7 +27,7 @@ class Govs(Dzivnieks):
     def skanja(self):
         print("MUUUUU")
 
-d1 = Dzivnieks("Gauja", 4)
+d1 = Govs("Gauja", 4)
 print(d1)
 d1.skanja()
 s1 = Suns("Reksis", 4)
