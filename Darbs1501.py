@@ -11,6 +11,8 @@ class Suns(Dzivnieks):
     def __init__(self, vards, kajas):
         super().__init__(vards, kajas)
         self.vards = "Komisārs " + self.vards
+    def skanja(self):
+        print("Vau! Vau! Gaf! Gaf!")
 
 d1 = Dzivnieks("Gauja", 4)
 print(d1)
