@@ -14,8 +14,9 @@ class kubs:
         self.krasasNosaukums = "sarkana"
         self.malasGarums = 1
         print (f"kubr krāsa - {self.krasasNosaukums}, malas garums - {self.malasGarums} cm")
-    del kubr
-
+class bloks(kubs):
+    def ievade(self):
+        self.kubuSk = int(input("Kubu skaits blokā"))
 k1 = kubs()
 k1.ievade()
 k1.izvade()
