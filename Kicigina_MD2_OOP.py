@@ -12,7 +12,7 @@ class Auglis(Augs):
         self.seed_count = seed_count
 
     def __str__(self):
-        return f"{self.nosaukums}, {self.daudzums} grami, {self.seed_count} sēkas uz 10 gramiem"
+        return f"{self.nosaukums}, {self.daudzums} grami, {self.seed_count} sēklas uz 10 gramiem"
 
 class Darzenis(Augs):
     def __init__(self, nosaukums, daudzums, alergiju_izraisa):
