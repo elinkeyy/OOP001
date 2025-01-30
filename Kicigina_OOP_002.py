@@ -7,7 +7,7 @@ class skolens:
     def pievienotAtzimi(self, atzime):
         self.sanemtasAtzimes.append(atzime)
     def izvade(self):
-        self.videjais = sum(self.sanemtasAtzimes) / len(self.sanemtasAtzimes) if self.sanemtasAtzimes else 0
+        self.videjais = sum(self.sanemtasAtzimes) / len(self.sanemtasAtzimes)
         print(f"Vārds: {self.vards}, Vecums: {self.vecums};")
         print("Atzīmes:")
         for atzime in self.sanemtasAtzimes:
