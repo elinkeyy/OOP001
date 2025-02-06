@@ -20,7 +20,7 @@ class kvadrats(figura):
     def perimetrs(self):
         self.perimetrs = self.mala*4
     def __str__(self):
-        return f"Kvadrāts({self.c_x}, {self.c_y}), mala = {self.mala}, laukums = {self.laukums}, perimetrs = {self.perimetrs};"
+        return f"Kvadrāts({self.c_x}, {self.c_y}), mala = {self.mala}, laukums = {self.laukums()}, perimetrs = {self.perimetrs};"
 class aplis(figura):
     def __init__(self, krasa, x, y, radiuss):
         super().__init__(krasa, x, y)
@@ -40,8 +40,3 @@ figuras = [
 ]
 for figura in figuras:
     print(figura)
-kopigais_laukums = sum(self.laukums() for figura in figuras)
-print('Kopijais laukums ir', kopigais_laukums,'cm2')
-vid_c_x = sum(figura.c_x for figura in figuras) / len(figuras)
-vid_c_y = sum(figura.c_y for figura in figuras) / len(figuras)
-print(f"Figūru centru viduspunkts: ({vid_c_x:.2f}, {vid_c_y:.2f})")
